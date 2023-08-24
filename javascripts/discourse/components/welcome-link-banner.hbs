@@ -1,0 +1,16 @@
+{{#if this.shouldShow}}
+  <div class="welcome-link-banner-wrapper">
+    <div class="welcome-link-banner">
+      <div id="banner-content">
+         {{html-safe (theme-i18n "meta_banner.content")}}
+        </div>
+      {{#if (theme-setting "can_be_dismissed")}}
+          <DButton
+            @class="btn-flat welcome-link-banner-close"
+            @icon="times"
+            @action={{this.dismiss}}
+          />
+        {{/if}}
+    </div>
+  </div>
+{{/if}}
