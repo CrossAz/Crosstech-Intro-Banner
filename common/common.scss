@@ -17,6 +17,9 @@
     line-height: 1.5;
     border-radius: 8px;
     padding: 24px;
+    > p:first-child {
+      margin-right: 12px;
+    }
 }
 .above-main-container-outlet.welcome-link-banner-connectors,
 .below-site-header-outlet.welcome-link-banner-connector {
